@@ -17,6 +17,6 @@ USER ${USER}
 WORKDIR ${HOME}
 
 COPY node.tar.gz /home/${USER}
-COPY root_server.sh /home/${USER}
+COPY run_server.sh /home/${USER}
 
 EXPOSE 8080
