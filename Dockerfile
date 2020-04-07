@@ -1,10 +1,10 @@
 FROM nvidia/cuda:10.1-devel-ubuntu18.04
 
-MAINTAINER Toshihiro KONDA
+LABEL maintainer "Toshihiro KONDA <kontoshi0317@gmail.com>"
 
 RUN apt-get update && \
-    apt install --yes vim \
-                      nodejs
+    apt-get install --yes vim \
+                          nodejs
 
 ENV USER test
 ENV HOME /home/${USER}
